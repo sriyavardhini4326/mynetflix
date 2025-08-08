@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+ 
+    .bgimg {
+        background-image: url("https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW2vHT_kRiIFO3spVWZwdWkXcxqJNrqkwN9mRw8q-yiY0hi3ho64Ce5nh3QXG4F5oaEZUDNYCWK8y-aKlaUMEsTmOd3mOZwIfvEQ.jpg?r=0b1");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        color: white;
+    }
+
+    /* Dark overlay */
+    .overlay {
+        background-color: rgba(0,0,0,0.6);
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .header a {
+        background-color: rgba(229, 9, 20, 1);
+        color: white;
+        padding: 8px 20px;
+        margin-left: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .header a:hover {
+        background-color: #b20710;
+    }
+
+    /* Main content */
+    .container {
+        position: relative;
+        z-index: 2;
+        top: 80px;
+        padding: 0 50px;
+        max-width: 600px;
+    }
+
+    .container img {
+        max-width: 250px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    /* Season buttons */
+    .sbuttons {
+        margin-top: 20px;
+    }
+
+    .sbuttons button {
+        background-color: rgba(229, 9, 20, 1);
+        padding: 10px 18px;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        margin: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .sbuttons button:hover {
+        background-color: #b20710;
+        transform: scale(1.05);
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .logo-area {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 40px;
+}
+
+.logo-area img {
+    height: 80px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-right: 15px;
+    font-size: 0.9rem;
+}
+
+   </style>
+</head>
+<body>
+
+
+<div class="bgimg">
+    <div class="overlay"></div>
+
+    <div class="header">
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/190/493/non_2x/netflix-logo-netflix-icon-free-free-vector.jpg" alt="Logo">
+        </div>
+        <div>
+            <a href="">SignIn</a>
+            <a href="">Login</a>
+        </div>
+    </div>
+
+    <div class="container fade-in">
+        <img src="https://occ-0-3215-3662.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABU-NIi-Vk_aTYLH3zXoGoWOHltXxbHInxAHxUcHnxFzOukUuoYhDgpRcbTbNARaFsRe_blkZosxe3fZhGgAyRs_CaA2-6pJDiw.webp?r=d2f" alt="Squid Game">
+        <h2>Squid Game</h2>
+        <p>2024 | Seasons | A | Thriller</p>
+        <p>Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.</p>
+
+        <div class="sbuttons">
+            <button>Season1</button>
+            <button>Season2</button>
+            <button>Season3</button><br>
+            <button>Season4</button>
+            <button>Season5</button>
+            <button>Season6</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
